@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="netflix.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="main-container">
+      <img class="n-logo" src="n-logo.png" alt="">
+      <img class="netflix-logo" src="netflix-logo.png" alt="" />
+      <h2>Thank you for signing up at Netflix. Tell us more about yourself.</h2>
+      <div>
+        <form class="container-form" action="#">
+          <div class="item">
+            <label class="form-title" for="name">Name</label><br />
+            <input
+              class="form-box"
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="surname">Surname</label><br />
+            <input
+              class="form-box"
+              type="text"
+              id="surname"
+              placeholder="Enter your surname"
+              required
+            />
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="age">Age</label> <br />
+            <input
+              class="form-box"
+              type="number"
+              id="age"
+              min="18"
+              placeholder="Select your age"
+            />
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="email">Email</label> <br />
+            <input
+              class="form-box"
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="content-type">Content Type </label
+            ><br />
+            <select name="content-type" id="content-type">
+              <option value="movies">Movies</option>
+              <option value="series">Series</option>
+            </select>
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="movie-type">Movie Type</label><br />
+            <input type="checkbox" id="comedy" name="type" value="comedy" />
+            <label for="comedy"> Comedy</label><br />
+
+            <input type="checkbox" id="romance" name="type" value="romance" />
+            <label for="romance"> Romance</label><br />
+
+            <input type="checkbox" id="action" name="type" value="action" />
+            <label for="action"> Action</label>
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="gender">Gender</label><br />
+
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label><br />
+
+            <input type="radio" id="other" name="gender" value="other" />
+            <label for="other">Other</label>
+          </div>
+
+          <div class="item">
+            <label class="form-title" for="feedback">Feedback</label><br />
+            <textarea
+              class="form-box"
+              rows="5px"
+              cols="20px"
+              name="feedback"
+              id="feedback"
+              placeholder="Enter your comment"
+            ></textarea>
+          </div>
+
+          <input class="button" type="submit" value="Send" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
